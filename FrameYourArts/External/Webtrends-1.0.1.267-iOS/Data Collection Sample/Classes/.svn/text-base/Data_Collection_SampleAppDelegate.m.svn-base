@@ -1,0 +1,103 @@
+//
+//  Data_Collection_SampleAppDelegate.m
+//  Data Collection Sample
+//
+//  Created by Webtrends on 2/18/10.
+//  Copyright Webtrends, Inc 2010. All rights reserved.
+//
+
+#import "Data_Collection_SampleAppDelegate.h"
+#import "RootViewController.h"
+
+
+
+@implementation Data_Collection_SampleAppDelegate
+
+@synthesize window;
+@synthesize navigationController;
+
+
+#pragma mark -
+#pragma mark Application lifecycle
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+    
+	// Trigger "automatic" app launch
+	[super application:application didFinishLaunchingWithOptions:launchOptions];
+	
+	// Test each of the convenience methods
+	// send assorted strings as arguments to event methods 
+	NSString *contentGroup = @"Content Group";
+	NSString *conversionName = @"Conversion Name";
+	NSString *mediaName = @"Media Name";
+	NSString *mediaType = @"Media Type";
+	NSString *mediaEventType = @"Media Event Type";
+	NSString *productId = @"Product Id";
+	NSString *productSku = @"Product Sku";
+	NSString *customParam = @"custom_key";
+	NSString *customValue = @"custom_value";
+	WTEvent *event;
+	
+	
+	//wtEvent.onContentView("/HelloWorld/content/view", "HelloWorld Content View", "view", customData, contentGroup);
+	event = [WTEvent eventForContentView:@"/HelloWorld/content/view" eventDescr:@"HelloWorld Content View" eventType:@"view" contentGroup:contentGroup];
+	[event setValue:customValue forCustomParameter:customParam];
+	[self trackEvent:event];
+	
+	//wtEvent.onButtonClick("/HelloWorld/button/click", "HelloWorld Button Click", "click", customData);
+	event = [WTEvent eventForAction:@"/HelloWorld/button/click" eventDescr:@"HelloWorld Button Click" eventType:@"click"];
+	[event setValue:customValue forCustomParameter:customParam];
+	[self trackEvent:event];
+	
+	//wtEvent.onConversionEvent("/HelloWorld/conversion/event", "HelloWorld Conversion Event", "event", customData, contentGroup, conversionName);
+	event = [WTEvent eventForConversion:@"/HelloWorld/conversion/event" eventDescr:@"HelloWorld Conversion Event" eventType:@"event" contentGroup:contentGroup conversionName:conversionName];
+	[event setValue:customValue forCustomParameter:customParam];
+	[self trackEvent:event];
+	
+	//wtEvent.onMediaEvent("/HelloWorld/media/event", "HelloWorld Media Event", "event", customData, contentGroup, mediaName, mediaType, mediaEventType);
+	event = [WTEvent eventForMediaView:@"/HelloWorld/media/event" eventDescr:@"HelloWorld Media Event" eventType:@"event" contentGroup:contentGroup mediaName:mediaName mediaType:mediaType mediaEvent:mediaEventType];
+	[event setValue:customValue forCustomParameter:customParam];
+	[self trackEvent:event];
+	
+	
+	//wtEvent.onProductView("/HelloWorld/product/view", "HelloWorld Product View", "view", customData, contentGroup, productId, productSku);
+	event = [WTEvent eventForProductView:@"/HelloWorld/product/view" eventDescr:@"HelloWorld Product View" eventType:@"view" contentGroup:contentGroup productId:productId productSku:productSku];
+	[event setValue:customValue forCustomParameter:customParam];
+	[self trackEvent:event];
+	
+	
+	//wtEvent.onCustomEvent("/HelloWorld/custom/event", "HelloWorld Custom Event", customData);
+	// There is no custom event helper, so do it manually
+	event = [[[WTEvent alloc] initWithEventPath:@"/HelloWorld/custom/event" eventDescr:@"HelloWorld Custom Event"] autorelease];
+	[event setValue:customValue forCustomParameter:customParam];
+	[self trackEvent:event];
+	
+	
+	
+	[window addSubview:[navigationController view]];
+    [window makeKeyAndVisible];
+	return YES;
+}
+
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+	
+	// Fire off "automatic" app terminate event
+	[super applicationWillTerminate:application];
+	
+	// Save data if appropriate
+}
+
+
+#pragma mark -
+#pragma mark Memory management
+
+- (void)dealloc {
+	[navigationController release];
+	[window release];
+	[super dealloc];
+}
+
+
+@end
+

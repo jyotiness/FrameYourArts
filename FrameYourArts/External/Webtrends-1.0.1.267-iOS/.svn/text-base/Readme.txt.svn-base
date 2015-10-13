@@ -1,0 +1,162 @@
+Webtrends Mobile Application Library for iPhone
+March, 2010
+Copyright (c) 1996-2010 Webtrends Inc
+All rights reserved
+
+This document provides an overview of the Library and the most basic
+instructions for using the Webtrends Mobile Application library to send data
+from an iPhone application to the Webtrends Data Collection API.  When
+application events occur, they can be passed in parameters and sent to the data
+collection server for inclusion in Webtrends reporting. 
+
+For complete information about using the Library, see the online documentation
+located here:
+http://developer.webtrends.com/
+
+1. Components in This Package
+2. Instrumenting Your Application for Webtrends Data Collection
+3. Using the Sample Application
+4. Reporting Expectations
+5. Content View Methods and Webtrends Parameters
+6. Setting Up Webtrends Reporting
+7. Contacting Webtrends
+
+        
+Components in This Package
+--------------------------    
+
+This package contains the following files:
+
+--Webtrends.plist contains the operational settings for the Library.
+--Webtrends.mom defines the Managed Object Model used to cache events.
+--The Webtrends.framework folder contains the framework and header files.
+--The Data Collection Sample folder contains a sample application.
+
+
+Instrumenting Your Application for Webtrends Data Collection
+------------------------------------------------------------
+    
+The following steps provide an overview of the instrumentation process.
+
+You can implement this library using the following general steps:
+
+	1. Add WebtrendsClientLibrary.plist and WebtrendsClientLibrary.mom to your
+		Xcode project. Make sure that "Copy items into destination group's
+		folder"	is selected.
+
+	2. Select the WebtrendsClientLibrary.plist file and make these two changes:
+		i) Change the wt_dc_dcsid value so it contains your dcsid. The dcsid is
+			the	unique ID associated with a Webtrends data source.
+		ii) Change the wt_dc_timezone value so it contains your Webtrends data
+			source timezone, expressed as a GMT offset in hours.  If you don't
+			have a dcsid or you don't know what a data source is, contact your
+			Webtrends administrator.
+
+	3. Using the Add > Existing Frameworks > Add Others path: 
+		i)Add the Webtrends.framework file to your project. Use the Add >
+			Existing Frameworks > Add Others path, which enables you to upgrade
+			the	SDK	later if you need to.  
+		ii)Add SystemConfiguration.framework, CoreData.framework, and
+			CoreLocation.framework.
+
+	4. Add an Import statement to the Webtrends.h header file by adding it
+		globally to the .pch file using the following code:
+			#import <Webtrends/Webtrends.h>. 
+		If you don't have a .pch file, you can add it to each controller or
+		other class.
+
+	5. Set the Other Linker Flags to include -all_load and -ObjC.
+
+	6. Modify the application delegate so that it inherits WTAppDelegate instead
+		of the default NSObject. This implements basic tracking of application
+		launches, stops, and starts.
+
+	7. Implement: 
+		
+		- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+		
+		and call super on it. You should also call super on any methods you
+		override from UIApplicationDelegate.       
+
+	8. To customize your event tracking and obtain deeper insight, implement any
+		of the explicit methods described in the documentation.
+
+
+Using the Sample Application
+----------------------------
+
+The sample application is included to show you how an application can be
+instrumented using the Webtrends Mobile Application Library.  The following
+steps provide a way to use the sample application:
+
+	1. Copy the following files into the Data Collection Sample folder:
+		Webtrends.mom
+		Webtrends.plist
+
+	2. Copy the following folder into the Data Collection Sample folder:
+		Webtrends.framework 
+
+	3. Open the Data Collection Sample.xcodeproj in Xcode.
+
+	4. Modify the Webtrends.plist file as follows:
+		Change the wt_dc_dcsid value to your dcsid.
+		Change the wt_dc_timezone value to your timezone.
+
+	5. Build and run the Sample Application.
+
+
+Reporting Expectations
+----------------------
+    
+After you implement the Webtrends client library as described in steps 1-7 of
+"Instrumenting Your Application for Webtrends Data Collection," you can expect
+standard reports such as page views to be populated when you create a basic
+profile based on the data source to which you are sending data.  Additional
+reporting can be created based on custom parameter values tailored to your
+application. 
+
+	
+Content View Methods and Webtrends Parameters
+---------------------------------------------
+
+Many of the methods associated with the Library ask for one or more values to
+be passed to them. These values automatically populate various Webtrends
+parameters, which are used to generate the various predefined reports you see
+in Webtrends. You can then create your own custom reports using these same
+parameters.  
+
+For a list of these parameters, see the documentation.
+
+You do NOT need to create these parameters manually in the iPhone library.
+When you implement the methods described in the documentation and pass your
+custom values, Webtrends parameters are implemented automatically.
+
+
+Setting Up Webtrends Reporting
+------------------------------
+
+To set up reporting based on this data:
+
+	1. Create a profile for reporting. This profile should use the same data
+		source associated with the unique dcsid used to set up data collection.
+
+	2. Services will assist you in creating custom reports based on custom 
+		tracking parameters.
+
+    
+Contacting Webtrends
+--------------------
+
+For more information about the Data Collection API or this code library, contact
+your Webtrends account representative or go to developer.webtrends.com. 
+
+Webtrends Inc. 
+851 SW 6th Ave.
+Suite 1600
+Portland, OR 97204
+
+Phone: (503) 294-7025
+Fax: (503) 294-7130
+US Toll Free: (888) 932-8736
+Email: feedback@webtrends.com
+Web: http://www.webtrends.com

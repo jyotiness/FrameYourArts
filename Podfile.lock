@@ -1,0 +1,52 @@
+PODS:
+  - AFNetworking (1.1.0)
+  - ARTSDK (0.0.4):
+    - AFNetworking (~> 1.1.0)
+    - Facebook-iOS-SDK (~> 3.16.0)
+    - Gigya-iOS-SDK (~> 3.2.0)
+    - GoogleAnalytics-iOS-SDK (~> 3.0.7)
+    - PayPal-iOS-SDK (~> 2.11.3)
+    - Pinterest-iOS (~> 2.3)
+    - Reachability (~> 3.2)
+    - SFHFKeychainUtils (~> 0.0.1)
+    - SVProgressHUD
+    - XMLDictionary
+  - Bolts (1.3.0):
+    - Bolts/AppLinks (= 1.3.0)
+    - Bolts/Tasks (= 1.3.0)
+  - Bolts/AppLinks (1.3.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.3.0)
+  - Facebook-iOS-SDK (3.16.2):
+    - Bolts
+  - Gigya-iOS-SDK (3.2.0)
+  - GoogleAnalytics-iOS-SDK (3.0.9)
+  - PayPal-iOS-SDK (2.11.5)
+  - Pinterest-iOS (2.3)
+  - Reachability (3.2)
+  - SFHFKeychainUtils (0.0.1)
+  - SVProgressHUD (1.1.3)
+  - XMLDictionary (1.4)
+
+DEPENDENCIES:
+  - ARTSDK (from `../ARTSDK`)
+
+EXTERNAL SOURCES:
+  ARTSDK:
+    :path: "../ARTSDK"
+
+SPEC CHECKSUMS:
+  AFNetworking: e6427e782b25a2289d909960df8ef41358b3277c
+  ARTSDK: 09887fc2c21a48c1cc79ba97621ffd9f528bbf68
+  Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
+  Facebook-iOS-SDK: 8b1e1af601f865f29973f750805d25724533e686
+  Gigya-iOS-SDK: d0287d3a9a60c7838cfe5c22279a6d244ce37ee5
+  GoogleAnalytics-iOS-SDK: 3b0994bef22ed2e176a9e2a4d1660c7c2542eb47
+  PayPal-iOS-SDK: e5b0cf6c38866a47dad92f97df92848a90d3b858
+  Pinterest-iOS: e79d1536a7a275e3340cdeb678e85b350f798562
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SFHFKeychainUtils: 9576b411a79a058f4d5381ace6f3242b9a62e664
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  XMLDictionary: f9f51601ba76678b594ab485f2b00ec1fed23724
+
+COCOAPODS: 0.39.0

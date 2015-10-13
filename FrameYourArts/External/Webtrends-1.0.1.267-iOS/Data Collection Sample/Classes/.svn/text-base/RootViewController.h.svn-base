@@ -1,0 +1,14 @@
+//
+//  RootViewController.h
+//  Data Collection Sample
+//
+//  Created by Webtrends on 2/18/10.
+//  Copyright Webtrends, Inc 2010. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface RootViewController : UITableViewController {
+}
+
+@end

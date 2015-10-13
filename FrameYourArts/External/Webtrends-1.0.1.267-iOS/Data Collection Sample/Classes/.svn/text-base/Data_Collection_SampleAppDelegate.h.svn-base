@@ -1,0 +1,21 @@
+//
+//  Data_Collection_SampleAppDelegate.h
+//  Data Collection Sample
+//
+//  Created by Webtrends on 2/18/10.
+//  Copyright Webtrends, Inc 2010. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface Data_Collection_SampleAppDelegate : WTAppDelegate <UIApplicationDelegate> {
+    
+    UIWindow *window;
+    UINavigationController *navigationController;
+}
+
+@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
+
+@end
+

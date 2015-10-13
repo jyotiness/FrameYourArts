@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap
+END
+SoapObject.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapObject.h
+END
+NSData+Base64.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/NSData+Base64.h
+END
+NSMutableArray+Soap.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/NSMutableArray+Soap.m
+END
+SoapDictionary.m
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapDictionary.m
+END
+SoapDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapDelegate.h
+END
+SoapFault.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapFault.h
+END
+SoapObject.m
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapObject.m
+END
+NSData+Base64.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/NSData+Base64.m
+END
+SoapHandler.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapHandler.h
+END
+SoapArray.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapArray.h
+END
+Soap.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/Soap.h
+END
+SoapFault.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapFault.m
+END
+SoapParameter.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapParameter.h
+END
+SoapHandler.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapHandler.m
+END
+SoapNil.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapNil.h
+END
+SoapArray.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapArray.m
+END
+Soap.m
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/Soap.m
+END
+SoapParameter.m
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapParameter.m
+END
+SoapNil.m
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapNil.m
+END
+SoapRequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapRequest.h
+END
+SoapLiteral.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapLiteral.h
+END
+SoapRequest.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapRequest.m
+END
+SoapReachability.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapReachability.h
+END
+SoapService.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapService.h
+END
+SoapLiteral.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapLiteral.m
+END
+NSMutableArray+Soap.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/NSMutableArray+Soap.h
+END
+SoapDictionary.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapDictionary.h
+END
+SoapReachability.m
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapReachability.m
+END
+SoapService.m
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/artdotcom/!svn/ver/19376/mobileapps/tags/iPhone/P7/External/Soap/SoapService.m
+END

@@ -1,0 +1,67 @@
+{
+  "name": "ARTSDK",
+  "version": "0.0.4",
+  "summary": "Art.com iOS SDK",
+  "authors": {
+    "Doug Diego": "ddiego@art.com"
+  },
+  "homepage": "https://github.com/jyotiness/ARTSDK",
+  "source": {
+    "git": "https://github.com/jyotiness/ARTSDK.git",
+    "tag": "0.0.4"
+  },
+  "source_files": [
+    "ARTSDK",
+    "thirdparty/nimbus/src/core/src",
+    "thirdparty/nimbus/src/networkimage/src",
+    "ARTSDK/CardIO"
+  ],
+  "resource_bundles": {
+    "ArtAPI": [
+      "Resources/*.png",
+      "ARTSDK/*.xib",
+      "Resources/*.lproj",
+      "Resources/Fonts"
+    ]
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "7.0"
+  },
+  "dependencies": {
+    "AFNetworking": [
+      "~> 1.1.0"
+    ],
+    "GoogleAnalytics-iOS-SDK": [
+      "~> 3.0.7"
+    ],
+    "SFHFKeychainUtils": [
+      "~> 0.0.1"
+    ],
+    "SVProgressHUD": [
+
+    ],
+    "Facebook-iOS-SDK": [
+      "~> 3.16.0"
+    ],
+    "Pinterest-iOS": [
+      "~> 2.3"
+    ],
+    "PayPal-iOS-SDK": [
+      "~> 2.11.3"
+    ],
+    "Gigya-iOS-SDK": [
+      "~> 3.2.0"
+    ],
+    "XMLDictionary": [
+
+    ],
+    "Reachability": [
+      "~> 3.2"
+    ]
+  }
+}

@@ -8,20 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		3B0CD2AE1BCD035B00C4C1DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0CD2AD1BCD035B00C4C1DB /* AppDelegate.swift */; };
-		3B0CD2B01BCD035B00C4C1DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0CD2AF1BCD035B00C4C1DB /* ViewController.swift */; };
+		3B0CD2B01BCD035B00C4C1DB /* FAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0CD2AF1BCD035B00C4C1DB /* FAViewController.swift */; };
 		3B0CD2B31BCD035B00C4C1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0CD2B11BCD035B00C4C1DB /* Main.storyboard */; };
 		3B0CD2B51BCD035B00C4C1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0CD2B41BCD035B00C4C1DB /* Assets.xcassets */; };
 		3B0CD2B81BCD035B00C4C1DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0CD2B61BCD035B00C4C1DB /* LaunchScreen.storyboard */; };
+		A73592A311EAA6A96CB472BE /* libPods-FrameYourArts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8822F90A3E04F6864D4D5B9 /* libPods-FrameYourArts.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B0CD2AA1BCD035B00C4C1DB /* FrameYourArts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrameYourArts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0CD2AD1BCD035B00C4C1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B0CD2AF1BCD035B00C4C1DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B0CD2AF1BCD035B00C4C1DB /* FAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAViewController.swift; sourceTree = "<group>"; };
 		3B0CD2B21BCD035B00C4C1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B0CD2B41BCD035B00C4C1DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B0CD2B71BCD035B00C4C1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B0CD2B91BCD035B00C4C1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0CD6821BCD03B100C4C1DB /* FYA-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FYA-Bridging-Header.h"; sourceTree = "<group>"; };
+		42FB98418CD4E4C6E8797C3F /* Pods-FrameYourArts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameYourArts.release.xcconfig"; path = "Pods/Target Support Files/Pods-FrameYourArts/Pods-FrameYourArts.release.xcconfig"; sourceTree = "<group>"; };
+		9DAF70B06D10B47DC674101A /* Pods-FrameYourArts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrameYourArts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrameYourArts/Pods-FrameYourArts.debug.xcconfig"; sourceTree = "<group>"; };
+		D8822F90A3E04F6864D4D5B9 /* libPods-FrameYourArts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FrameYourArts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73592A311EAA6A96CB472BE /* libPods-FrameYourArts.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 			children = (
 				3B0CD2AC1BCD035B00C4C1DB /* FrameYourArts */,
 				3B0CD2AB1BCD035B00C4C1DB /* Products */,
+				A2A667CD4205E9FCB77899C2 /* Pods */,
+				A43B26327D9A21A524DFA377 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,32 @@
 		3B0CD2AC1BCD035B00C4C1DB /* FrameYourArts */ = {
 			isa = PBXGroup;
 			children = (
+				3B0CD6821BCD03B100C4C1DB /* FYA-Bridging-Header.h */,
 				3B0CD2AD1BCD035B00C4C1DB /* AppDelegate.swift */,
-				3B0CD2AF1BCD035B00C4C1DB /* ViewController.swift */,
+				3B0CD2AF1BCD035B00C4C1DB /* FAViewController.swift */,
 				3B0CD2B11BCD035B00C4C1DB /* Main.storyboard */,
 				3B0CD2B41BCD035B00C4C1DB /* Assets.xcassets */,
 				3B0CD2B61BCD035B00C4C1DB /* LaunchScreen.storyboard */,
 				3B0CD2B91BCD035B00C4C1DB /* Info.plist */,
 			);
 			path = FrameYourArts;
+			sourceTree = "<group>";
+		};
+		A2A667CD4205E9FCB77899C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DAF70B06D10B47DC674101A /* Pods-FrameYourArts.debug.xcconfig */,
+				42FB98418CD4E4C6E8797C3F /* Pods-FrameYourArts.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A43B26327D9A21A524DFA377 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8822F90A3E04F6864D4D5B9 /* libPods-FrameYourArts.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B0CD2BC1BCD035B00C4C1DB /* Build configuration list for PBXNativeTarget "FrameYourArts" */;
 			buildPhases = (
+				311ED82733BA4CB71AD4E3EB /* Check Pods Manifest.lock */,
 				3B0CD2A61BCD035B00C4C1DB /* Sources */,
 				3B0CD2A71BCD035B00C4C1DB /* Frameworks */,
 				3B0CD2A81BCD035B00C4C1DB /* Resources */,
+				ED495988A8BFF0113D512195 /* Embed Pods Frameworks */,
+				3B5B4E0C5227A809D8365099 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -105,6 +134,32 @@
 			knownRegions = (
 				en,
 				Base,
+				ca,
+				cs,
+				da,
+				de,
+				el,
+				es,
+				fi,
+				fr,
+				he,
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				nb,
+				nl,
+				pl,
+				pt,
+				ro,
+				ru,
+				sk,
+				sv,
+				tr,
+				"zh-Hans",
+				"zh-Hant",
+				English,
 			);
 			mainGroup = 3B0CD2A11BCD035B00C4C1DB;
 			productRefGroup = 3B0CD2AB1BCD035B00C4C1DB /* Products */;
@@ -129,12 +184,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		311ED82733BA4CB71AD4E3EB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B5B4E0C5227A809D8365099 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameYourArts/Pods-FrameYourArts-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED495988A8BFF0113D512195 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FrameYourArts/Pods-FrameYourArts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B0CD2A61BCD035B00C4C1DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B0CD2B01BCD035B00C4C1DB /* ViewController.swift in Sources */,
+				3B0CD2B01BCD035B00C4C1DB /* FAViewController.swift in Sources */,
 				3B0CD2AE1BCD035B00C4C1DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,23 +347,39 @@
 		};
 		3B0CD2BD1BCD035B00C4C1DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DAF70B06D10B47DC674101A /* Pods-FrameYourArts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameYourArts/External/AviarySDK",
+					"$(PROJECT_DIR)/FrameYourArts/External/Crashlytics",
+				);
 				INFOPLIST_FILE = FrameYourArts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.art.FrameYourArts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FrameYourArts/FYA-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		3B0CD2BE1BCD035B00C4C1DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42FB98418CD4E4C6E8797C3F /* Pods-FrameYourArts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FrameYourArts/External/AviarySDK",
+					"$(PROJECT_DIR)/FrameYourArts/External/Crashlytics",
+				);
 				INFOPLIST_FILE = FrameYourArts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.art.FrameYourArts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FrameYourArts/FYA-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -283,6 +402,7 @@
 				3B0CD2BE1BCD035B00C4C1DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

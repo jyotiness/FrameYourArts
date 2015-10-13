@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FC5B2DE17B2BB4A8C52971D152D434A1E4297E6F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B88AB8F0511B08BEA52253D89E88C467297C75A5" : 0,
+    "DBD776CC928E444D3A827CC807B386C38CAAA138" : 0,
+    "FC5B2DE17B2BB4A8C52971D152D434A1E4297E6F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F9AEC620-42F9-4F6F-AF1D-DDA1F9E9B354",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B88AB8F0511B08BEA52253D89E88C467297C75A5" : "..\/FrameYourArt",
+    "DBD776CC928E444D3A827CC807B386C38CAAA138" : "ARTSDK\/",
+    "FC5B2DE17B2BB4A8C52971D152D434A1E4297E6F" : "FrameYourArts\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FrameYourArts",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FrameYourArts.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jyotiness\/FrameYourArt.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B88AB8F0511B08BEA52253D89E88C467297C75A5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jyotiness\/artsdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DBD776CC928E444D3A827CC807B386C38CAAA138"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jyotiness\/FrameYourArts.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FC5B2DE17B2BB4A8C52971D152D434A1E4297E6F"
+    }
+  ]
+}
